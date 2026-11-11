@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vince Gerano – IT Student Portfolio</title>
+<meta name="description" content="Personal web portfolio of Vince Gerano, an IT student and aspiring web developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Cormorant+Garamond:wght@600;700&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<canvas id="space" aria-hidden="true"></canvas>
+
+<header>
+  <div class="bar">
+    <a class="brand" href="#about">V.G. // Archive</a>
+    <nav aria-label="Portfolio sections">
+      <ul>
+        <li><a href="#about">01 About</a></li>
+        <li><a href="#education">02 Academics</a></li>
+        <li><a href="#achievements">03 Achievements</a></li>
+        <li><a href="#skills">04 Skills</a></li>
+        <li><a href="#projects">05 Projects</a></li>
+        <li><a href="#values">06 Values</a></li>
+      </ul>
+    </nav>
+    <button id="motion" type="button" aria-pressed="true">Motion: on</button>
+  </div>
+</header>
+
+<main>
+  <!-- 1. Profile and short biography -->
+  <section id="about" aria-labelledby="about-title">
+    <figure class="portrait">
+      <div class="frame">
+        <span aria-hidden="true">VG</span>
+        <!-- Add your photo to the repository as profile.jpg -->
+        <img src="profile.jpg" alt="Portrait of Vince Gerano" onerror="this.remove()">
+      </div>
+      <figcaption>Subject: V. Gerano // IT student</figcaption>
+    </figure>
+    <div class="intro">
+      <p class="tag">File 001 // About me</p>
+      <p class="hello" aria-hidden="true"><span id="typed">Hello, world.</span><i class="caret"></i></p>
+      <h1 id="about-title">Vince Gerano</h1>
+      <p class="role">IT student and aspiring web developer</p>
+      <div class="bio panel">
+        <p>Hi, I’m Vince Gerano, an Information Technology student who enjoys turning ideas into things people can click, play, and explore. I’m currently learning HTML and CSS to build responsive websites, and I use Git and GitHub to keep track of my work.</p>
+        <p>I also practice C++ and build small games in Roblox Studio with Luau. What excites me most about technology is how a few lines of code can become something interactive, from a personal portfolio to an animated map of the solar system. I’m aiming to grow into a web developer who writes clean, readable code and keeps learning with every project. I’m always open to feedback, new tools, and teammates who want to build something together.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Academic background -->
+  <section class="panel" id="education" aria-labelledby="education-title">
+    <p class="tag">File 002 // Flight school</p>
+    <h2 id="education-title">Academic background</h2>
+    <ol class="tl">
+      <li>
+        <h3>College: <span class="fill">[Bachelor of Science in Information Technology]</span></h3>
+        <p><span class="fill">[University name]</span>, expected graduation <span class="fill">[year]</span></p>
+      </li>
+      <li>
+        <h3>Senior high school: <span class="fill">[Track or strand]</span></h3>
+        <p><span class="fill">[School name]</span>, <span class="fill">[years attended]</span></p>
+      </li>
+    </ol>
+    <h3 class="sub">Relevant coursework</h3>
+    <ul class="bul">
+      <li>CSIT 111: Web Development (HTML, CSS, and building this portfolio)</li>
+      <li><span class="fill">[Programming fundamentals or C++ course]</span></li>
+      <li><span class="fill">[Other CS or IT courses and specializations]</span></li>
+    </ul>
+  </section>
+
+  <!-- 3. Notable achievements -->
+  <section class="panel" id="achievements" aria-labelledby="achievements-title">
+    <p class="tag">File 003 // Medal bay</p>
+    <h2 id="achievements-title">Notable achievements</h2>
+    <ul class="bul">
+      <li><span class="fill">[Academic honor or award, with the year]</span></li>
+      <li><span class="fill">[Certification or online course, such as freeCodeCamp or Coursera]</span></li>
+      <li><span class="fill">[Hackathon, competition, or organization leadership role]</span></li>
+    </ul>
+  </section>
+
+  <!-- 4. Skillset and programming languages -->
+  <section class="panel" id="skills" aria-labelledby="skills-title">
+    <p class="tag">File 004 // Toolkit</p>
+    <h2 id="skills-title">Skills and programming languages</h2>
+    <div class="groups">
+      <div class="group">
+        <h3>Languages</h3>
+        <ul class="chips">
+          <li>HTML5</li><li>CSS3</li><li>C++</li><li>Luau</li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Tools and platforms</h3>
+        <ul class="chips">
+          <li>Git</li><li>GitHub</li><li>GitHub Pages</li><li>VS Code</li><li>Roblox Studio</li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Soft skills</h3>
+        <ul class="chips">
+          <li>Problem-solving</li><li>Collaboration</li><li>Time management</li><li>Adaptability</li><li>Eagerness to learn</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Projects and researches -->
+  <section class="panel" id="projects" aria-labelledby="projects-title">
+    <p class="tag">File 005 // Mission control</p>
+    <h2 id="projects-title">Projects and research</h2>
+
+    <article class="project">
+      <h3>Personal Web Portfolio</h3>
+      <p>The site you are reading. The objective was to present my background, skills, and work in a clear, responsive layout that works on both desktop and mobile.</p>
+      <ul class="chips" aria-label="Technologies used"><li>HTML5</li><li>CSS3</li><li>Git</li><li>GitHub</li></ul>
+      <p><a href="https://github.com/vgerano-tech/csit-web-finals-2026">View the repository on GitHub</a></p>
+    </article>
+
+    <article class="project">
+      <h3>Space Explorer</h3>
+      <p>An animated solar system you can pan and zoom with a mouse, touch screen, or keyboard. The objective was to practice animation and user input in the browser.</p>
+      <ul class="chips" aria-label="Technologies used"><li>HTML5 Canvas</li><li>JavaScript</li><li>CSS3</li></ul>
+      <p><a href="space.html">Open the live demo</a></p>
+    </article>
+
+    <article class="project">
+      <h3>Grass-cutting Roblox game<span class="status">In progress</span></h3>
+      <p>A game where players cut tall grass with a saw-type cutter, collect resources, and bring them to a fountain safe zone. The objective is to learn game scripting and a complete gameplay loop.</p>
+      <ul class="chips" aria-label="Technologies used"><li>Roblox Studio</li><li>Luau</li></ul>
+      <p class="muted">Screenshot or link: <span class="fill">[add an image or game link]</span></p>
+    </article>
+  </section>
+
+  <!-- 6. Work ethics and core values -->
+  <section class="panel" id="values" aria-labelledby="values-title">
+    <p class="tag">File 006 // Flight code</p>
+    <h2 id="values-title">Work ethics and core values</h2>
+    <ul class="values">
+      <li><strong>Punctuality</strong>I plan my time and submit work on schedule.</li>
+      <li><strong>Clean code</strong>I write readable code with clear names and comments so others can follow it.</li>
+      <li><strong>Adaptability</strong>I pick up new tools and change direction when a project needs it.</li>
+      <li><strong>Collaboration</strong>I share progress, welcome feedback, and use version control to work with others.</li>
+      <li><strong>Continuous learning</strong>I treat every bug and every project as a chance to improve.</li>
+      <li><strong>Integrity</strong>I do my own work, give credit where it is due, and own my mistakes.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Vince Gerano. Find my code on <a href="https://github.com/vgerano-tech">GitHub</a>.</p>
+</footer>
+
+<p class="zone" id="zone" aria-hidden="true">Zone 01 — Home orbit</p>
+<a class="top" href="#about" aria-label="Back to top">Top</a>
+</body>
+</html>
